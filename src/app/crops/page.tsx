@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-function CropPage() {
+async function CropPage() {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
   return (
     <section className=''>
       <div className='my-12'>
